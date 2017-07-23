@@ -24,6 +24,16 @@
   ga('send', 'pageview');
 
 </script>
+<script>
+  $(document).ready(function(){
+    var today = new Date();
+    var date_to_reply = new Date(2017, 6, 21);
+    console.log(date_to_reply);
+    var timeinmilisec = today.getTime() - date_to_reply.getTime();
+    var datediff = Math.floor(timeinmilisec / (1000 * 60 * 60 * 24))
+    $("#numdays").html(datediff);
+  });
+</script>
 
 </head>
 <body>
@@ -31,7 +41,7 @@
 <div class="container">
 <p></p>
   <div class="jumbotron">
-  <p>Dabóczi Kálmán, a BKK Zrt vezérigazgatója nem maradhat tovább a helyén. Lemondott már?</p>
+  <p>Dabóczi Kálmán, a BKK Zrt vezérigazgatója nem maradhat tovább a helyén. Már <span id="numdays"></span> napja várjuk a lemondását. Lemondott már?</p>
     <h1>Még nem mondott le.</h1>      
     
   </div>
@@ -55,6 +65,8 @@
 <li><a href="http://24.hu/belfold/2017/07/22/majdnem-teljesen-sikerult-bocsanatot-kernie-a-bkk-nak/">Majdnem teljesen sikerült bocsánatot kérnie a BKK-nak</a></li>
 <li><a href="https://444.hu/2017/07/22/kiadott-egy-diadalmas-kozlemenyt-a-bkk-az-uj-eros-tuzfalarol-mikozben-tovabb-haldoklik-a-weboldala">Kiadott egy diadalmas közleményt a BKK az új erős tűzfaláról, miközben tovább haldoklik a weboldala</a></li>
 <li><a href="http://index.hu/belfold/2017/07/22/tuntetest_hirdetnek_hetfore_a_bkk_ele/">Tarlós vizsgálatot követel a BKK-botrány miatt</a></li>
+<li><a href="https://www.facebook.com/kozlekedotomeg/photos/a.1129802367114591.1073741828.1059103267517835/1455762724518552/?type=3&theater">Itt az ingyenes tömegközlekedés!</a></li>
+<li><a href="https://zoom.hu/2017/07/23/milliardokba-kerulhet-es-nem-sumakolhato-el-az-adatvedelmi-incidens">Milliárdokba kerülhet és nem sumákolható el az adatvédelmi incidens</a></li>
 </ul>
 <h2>A metró „biztonságos”!</h2>
 <ul>
